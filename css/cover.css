@@ -9,16 +9,6 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
 
 /*
  * Base structure
@@ -112,9 +102,22 @@ body {
   padding: 0 20px;
   max-width: 50%;
 }
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
+
+.btn svg {
+  width: 40px;
+  height: 40px;
+}
+
+.btn svg#twitter {
+  fill: #ffffff;
+}
+
+.btn svg#facebook #square {
+  fill: #ffffff;
+}
+
+.btn svg#facebook #f {
+  fill: transparent;
 }
 
 
