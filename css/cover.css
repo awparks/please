@@ -37,8 +37,8 @@ body {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-  display: flex;
-  align-content: center;
+  height: 100vh;
+  width: 100vw;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
   background-image: url(../assets/trump.jpg);
@@ -46,11 +46,10 @@ body {
   background-size: cover;
   background-repeat: none;
 }
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
 .cover-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
   margin-right: auto;
   margin-left: auto;
 }
@@ -111,7 +110,7 @@ body {
 .cover {
   padding: 0 20px;
   max-width: 50%;
-  flex: 1 1 50%;
+  align-self: flex-end;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -136,9 +135,8 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
     top: 0;
-    display: flex;
+    align-self: flex-start;
   }
   .mastfoot {
     position: fixed;
