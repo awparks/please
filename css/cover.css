@@ -31,7 +31,7 @@ body {
 }
 body {
   color: #fff;
-  text-align: center;
+  text-align: left;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
@@ -101,10 +101,7 @@ body {
 
 @media (min-width: 768px) {
   .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
+    flex: 1 1 100%;
   }
 }
 
@@ -115,6 +112,7 @@ body {
 
 .cover {
   padding: 0 20px;
+  max-width: 50%;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -141,6 +139,7 @@ body {
   .masthead {
     position: fixed;
     top: 0;
+    display: flex;
   }
   .mastfoot {
     position: fixed;
