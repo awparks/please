@@ -87,10 +87,8 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    flex: 1 1 100%;
-  }
+.masthead-brand {
+  flex: 1 1 100%;
 }
 
 
@@ -100,7 +98,12 @@ body {
 
 .cover {
   padding: 0 20px;
-  max-width: 50%;
+}
+
+@media (min-width: 768px) {
+  .cover {
+    max-width: 50%;
+  }
 }
 
 .social-link svg {
@@ -117,7 +120,7 @@ body {
 }
 
 .social-link svg#facebook #f {
-  fill: transparent;
+  fill: #000000;
 }
 
 
