@@ -103,20 +103,20 @@ body {
   max-width: 50%;
 }
 
-.btn svg {
+.social-link svg {
   width: 40px;
   height: 40px;
 }
 
-.btn svg#twitter {
+.social-link svg#twitter {
   fill: #ffffff;
 }
 
-.btn svg#facebook #square {
+.social-link svg#facebook #square {
   fill: #ffffff;
 }
 
-.btn svg#facebook #f {
+.social-link svg#facebook #f {
   fill: transparent;
 }
 
