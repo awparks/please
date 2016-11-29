@@ -58,16 +58,17 @@ body {
 .masthead-brand {
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
-  font-size: 13px;
-  text-transform: uppercase;
+  font-size: 16px;
   flex: 1 1 100%;
   text-align: left;
   margin: 0;
+  font-family: 'Hebo', sans-serif;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
   .masthead-brand {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -104,6 +105,11 @@ body {
  * Cover
  */
 
+ .lead {
+   font-family: 'Hebo', sans-serif;
+   font-weight: 400;
+ }
+
  .text-box-wrapper {
    display: flex;
    flex-direction: row;
@@ -124,10 +130,11 @@ body {
 
 .cover-heading {
   font-size: 30px;
-  font-family: 'Lora', serif;
-  padding: 0 2.75vw 2.75vw;
+  font-family: 'Libre Baskerville', serif;
+  padding: 0 2.75vw 4.5vw;
   text-align: left;
   margin: 0;
+  font-weight: 700;
 }
 
 .share-btn-wrapper {
@@ -165,12 +172,19 @@ body {
     flex: 1 0 100%;
     padding: 0 2.75vw 2.75vw;
   }
+
+  .cover.inner {
+    padding-bottom: 4.5vw;
+  }
 }
 
 .mastfoot .btn-primary {
   background-color: rgb(0, 169, 59);
   border-color: rgb(1, 136, 47);
   transition: background-color 200ms 0ms ease;
+  font-family: 'Hebo', sans-serif;
+  font-weight: 400;
+  letter-spacing: .05em;
 }
 
 .mastfoot .btn-primary:hover {
