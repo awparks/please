@@ -62,7 +62,7 @@ body {
   flex: 1 1 100%;
   text-align: left;
   margin: 0;
-  font-family: 'Hebo', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 
@@ -106,7 +106,7 @@ body {
  */
 
  .lead {
-   font-family: 'Hebo', sans-serif;
+   font-family: 'Work Sans', sans-serif;
    font-weight: 400;
  }
 
@@ -130,11 +130,11 @@ body {
 
 .cover-heading {
   font-size: 30px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Work Sans', serif;
   padding: 0 2.75vw 4.5vw;
   text-align: left;
   margin: 0;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .share-btn-wrapper {
