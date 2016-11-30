@@ -142,12 +142,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
 }
 
 .share-btn {
   flex: 0 0 auto;
   margin: 0 20px 0 0;
+  font-size: 0;
 }
 
 @media (min-width: 640px) {
