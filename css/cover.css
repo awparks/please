@@ -178,9 +178,9 @@ body {
     flex: 1 0 100%;
     padding: 0 3.5vw 3.5vw;
   }
-
-  .cover.inner {
-    padding-bottom: 4vw;
+  
+  .mastfoot {
+    padding-bottom: calc(3.5vw + 44px);
   }
 }
 
