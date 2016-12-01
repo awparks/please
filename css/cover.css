@@ -17,7 +17,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #000;
 }
 body {
   color: #fff;
@@ -30,24 +30,41 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: auto;
-  background-image: url(../assets/trump.jpg);
+  /*background-image: url(../assets/trump.jpg);
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: cover;*/
   box-sizing: border-box;
   position: relative;
 }
 
-.site-wrapper-inner {
-  background: rgba(0,0,0,0.4);
+/*.image-container {
+	width: 100vmin;
+	height: 100vmin;
+	background: url(../assets/trump.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+	-webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}*/
+
+.image-container-mirror {
+	width: 100vw;
+	height: 100vh;
+	background: url(../assets/trump.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: fixed;
+  opacity: 0.6;
 }
 
 .cover-container {
-  display: flex;
   height: 100vh;
   width: 100vw;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
   flex-direction: column;
-  margin-right: auto;
-  margin-left: auto;
   justify-content: flex-end;
   position: relative;
   box-sizing: border-box;
@@ -125,18 +142,20 @@ body {
  }
 
 .cover.inner {
-  padding: 0 1.375vw 2.75vw 2.75vw;
+  padding: 5vmax 2.5vmax 5vmax 5vmax;
   box-sizing: border-box;
   flex: 0 0 50%;
 }
 
 .cover-heading {
-  font-size: 36px;
+  font-size: 10vmax;
   font-family: 'Work Sans', serif;
-  padding: 0 3.5vw 4vw;
+  padding: 0;
   text-align: left;
-  margin: 3.5vw 0 0;
+  margin: 0;
   font-weight: 900;
+  flex-grow: 1;
+  padding: 5vmax 5vmax 0;
 }
 
 .share-btn-wrapper {
@@ -152,35 +171,24 @@ body {
   font-size: 0;
 }
 
-@media (min-width: 640px) {
-  .cover-heading {
-    font-size: 48px;
-    flex-grow: 0;
-    margin-top: auto;
-    padding: 0 2.75vw 4vw;
-  }
-}
 
-.masthead .inner {
-  padding: 2.75vw;
-}
 
 .mastfoot {
   box-sizing: border-box;
   flex: 0 0 50%;
   color: rgba(255,255,255,1);
-  padding: 0 2.75vw 2.75vw 1.375vw;
+  padding: 5vmax 5vmax 5vmax 2.5vmax;
 }
 
 @media screen and (max-width: 640px) {
   .mastfoot,
   .cover.inner {
     flex: 1 0 100%;
-    padding: 0 3.5vw 3.5vw;
+    padding: 5vmax;
   }
-  
+
   .mastfoot {
-    padding-bottom: calc(3.5vw + 44px);
+    padding-top: 0;
   }
 }
 
