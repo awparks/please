@@ -60,7 +60,7 @@ clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%,
 }
 
 .cover-container {
-  min-height: calc(100vh + 44px);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -136,6 +136,7 @@ clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%,
  @media screen and (max-width: 640px) {
    .text-box-wrapper {
      flex-direction: column;
+     margin-bottom: 44px;
    }
  }
 
